@@ -1,4 +1,8 @@
-
+import { AxiosError } from "axios";
+import { ApiResponse } from "../../../infrastructure/interfaces/api.response";
+import { OneRoleResponse } from "../../../infrastructure/interfaces/one-role.response";
+import { ApiErrorResponse } from "../../../infrastructure/interfaces/api-error.response";
+import { personsApi } from "../../api/persons.api";
 
 export const getOneRoleAction = async (roleId: string): 
 Promise<ApiResponse<OneRoleResponse>> => {

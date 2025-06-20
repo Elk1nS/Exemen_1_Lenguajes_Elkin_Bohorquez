@@ -1,4 +1,4 @@
-export interface RoleModel{
+export interface RoleModel {
     name: string;
-    //pendiente
+    description: string;
 }

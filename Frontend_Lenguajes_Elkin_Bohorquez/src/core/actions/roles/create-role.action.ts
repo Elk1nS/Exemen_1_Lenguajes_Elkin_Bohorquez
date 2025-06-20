@@ -1,7 +1,9 @@
 import { AxiosError } from "axios";
 import { ApiResponse } from "../../../infrastructure/interfaces/api.response";
-import { personsApi } from "../../api/persons.api";
+import { RoleModel } from "../../models/role.model";
 import { ApiErrorResponse } from "../../../infrastructure/interfaces/api-error.response";
+import { personsApi } from "../../api/persons.api";
+import { RoleResponse } from "../../../infrastructure/interfaces/role.response";
 
 
 export const createRoleAction = async(

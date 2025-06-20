@@ -1,3 +1,5 @@
 export interface RoleResponse{
-    //pendiente
+    id: string;
+    name: string;
+    description: string;
 }

@@ -1,4 +1,10 @@
+import { AxiosError } from "axios";
 import { ApiResponse } from "../../../infrastructure/interfaces/api.response";
+import { RoleResponse } from "../../../infrastructure/interfaces/role.response";
+import { RoleModel } from "../../models/role.model";
+import { ApiErrorResponse } from "../../../infrastructure/interfaces/api-error.response";
+import { personsApi } from "../../api/persons.api";
+
 
 
 export const editRoleAction = async (
@@ -13,6 +19,7 @@ export const editRoleAction = async (
             );
 
         return data;
+        
     } catch (error) {
         const apiError = error as AxiosError<ApiErrorResponse>;
 
